@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 100px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+
+}
+.links{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.links:hover{
+    text-decoration: underline;
+    color: red;
+}
+.home-content{
+    margin: 13% 0PX 0PX 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Permanent Marker", cursive;
+}
+#lname{
+  font-family: "Permanent Marker", cursive;
+  color: rgb(11, 204, 31);  
+}
+#user-details{
+    line-height: 1.5;
+}
+#download{
+    text-decoration:none ;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.home-img{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 2s, left 1s;
+}
+.home-img:hover #shape{
+    bottom: 60px;
+}
+.home-img:hover #girl{
+    left: 30%;
+}
+#about{
+    margin: 24% 7% 0px 8%;
+}
+.sectionHead{
+    text-align: center;
+}
+.mainHead{
+    font-size: 30px;
+}
+.subHead{
+    color: rgb(39, 22, 193);
+    font-size: 18px;
+}
+.aboutbBody{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+.img1{
+    width: 300px;
+}
+.aboutContent{
+    font-size: 20px;
+    text-align: justify;
+}
+.informations{
+    margin-top: 2.3rem;
+}
+.infoBox{
+    margin-bottom:10px;
+}
+.infoBox span{
+    margin-left: 2rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+ 
+}
+.skilContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barHead,.barPercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.portraitBar{
+    background-color:blue;
+    width: 90%;
+}
+.landscapBar{
+    background-color: blue;
+    width: 98%;
+}
+.editBar{
+    background-color: rgb(17, 123, 83);
+    width: 80%;
+}
+.wildBar{
+    background-color: blue;
+    width: 70%;
+}
+.mySkill{
+    width: 90%;
+}
+#contact{
+    margin: 13% 8% 0px 8%;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brands{
+    color: black;
+    font-size: 1.7rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,green,violet);
+}
+.icon:hover .brands{
+    color: white;
+    /* /animation */
+    animation: rotate 3s;
+} 
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.upArrow{
+    float: right;
+    margin: -30px 20px 40px 0px;
+}
+footer{
+    margin: 13% 0px 0px 8%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
+}
